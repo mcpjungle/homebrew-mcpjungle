@@ -5,20 +5,20 @@
 class Mcpjungle < Formula
   desc "Self-hosted MCP tool registry for enterprise AI agents"
   homepage "https://github.com/mcpjungle/MCPJungle"
-  version "0.3.4"
+  version "0.3.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mcpjungle/MCPJungle/releases/download/0.3.4/mcpjungle_Darwin_x86_64.tar.gz"
-      sha256 "fd4641de368aeb5a855a91398024c10a2305850fa90f7a9a8a82417f3e9de846"
+      url "https://github.com/mcpjungle/MCPJungle/releases/download/0.3.5/mcpjungle_Darwin_x86_64.tar.gz"
+      sha256 "8187bb34723146749a385aec13b17b4007d6abc9af47683f296125e83e70c102"
 
       def install
         bin.install "mcpjungle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mcpjungle/MCPJungle/releases/download/0.3.4/mcpjungle_Darwin_arm64.tar.gz"
-      sha256 "ee78b39bd4bfad2b5ccb5fdf556fec46ad3a80c0c1fe500e931f88c7d7b4526f"
+      url "https://github.com/mcpjungle/MCPJungle/releases/download/0.3.5/mcpjungle_Darwin_arm64.tar.gz"
+      sha256 "af2cc31aa9ea8feb9f0a64a62262f2c69d879a11d95591adc64204dac67be148"
 
       def install
         bin.install "mcpjungle"
@@ -28,15 +28,15 @@ class Mcpjungle < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mcpjungle/MCPJungle/releases/download/0.3.4/mcpjungle_Linux_x86_64.tar.gz"
-      sha256 "c2255b2d62e3ded77284021914d4946f754bc557d22329dc1565c52a291b1697"
+      url "https://github.com/mcpjungle/MCPJungle/releases/download/0.3.5/mcpjungle_Linux_x86_64.tar.gz"
+      sha256 "5e0834936a1737a679e2610f14c034d38b1236b2f6fb7497b2d3b6d5314f6c4c"
       def install
         bin.install "mcpjungle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mcpjungle/MCPJungle/releases/download/0.3.4/mcpjungle_Linux_arm64.tar.gz"
-      sha256 "de882ebc661e2c437ae7dd2c5f4216eed687de7fefdd0f0b99c15f1c40206c88"
+      url "https://github.com/mcpjungle/MCPJungle/releases/download/0.3.5/mcpjungle_Linux_arm64.tar.gz"
+      sha256 "a6d70f3bfccb9ab5e1dcccddd2da7cc40bab4eab1a0808f2bef7aaed4fb58f51"
       def install
         bin.install "mcpjungle"
       end
